@@ -34,6 +34,7 @@
 	}
 </script>
 
+<!-- Needs to respond to reset game -->
 <div on:click|once={userClick}>
 	{#if squareValue}
 		<i class="fas fa-times fa-3x"></i>

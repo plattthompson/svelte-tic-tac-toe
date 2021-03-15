@@ -32,6 +32,9 @@
 	$: diagonalDown = matrix[0][0] + matrix[1][1] + matrix[2][2];
 	$: diagonalUp = matrix[2][0] + matrix[1][1] + matrix[0][2];
 
+	$: console.log(horizontal1);
+	$: console.log(winner);
+
 	$: winner =
 		horizontal1 > 2 ?
 			true :
@@ -79,7 +82,7 @@
 <main>
 	<h1>Tic Tac Toe!</h1>
 	{#if winner}
-		<h2>Player {winner ? 'X' : 'Y'} wins!</h2>
+		<h2>{winner ? 'X' : 'O'} player wins!</h2>
 	{/if}
 	<div>
 		{#each matrix as row, i}
