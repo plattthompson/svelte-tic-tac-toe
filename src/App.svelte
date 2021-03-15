@@ -78,7 +78,7 @@
 
 <main>
 	<h1>Tic Tac Toe!</h1>
-	{#if winner !== null}
+	{#if winner}
 		<h2>Player {winner ? 'X' : 'Y'} wins!</h2>
 	{/if}
 	<div>
@@ -101,11 +101,7 @@
 	}
 
 	h1 {
-		/* margin-top: 0; */
-		/* margin: 0; */
-		/* margin-bottom: 1em; */
 		font-size: 5em;
-		/* flex: .5; */
 	}
 
 	div {
@@ -117,9 +113,6 @@
 		grid-template-rows: repeat(3, 1fr);
 		gap: 1em;
 		justify-items: center;
-		/* justify-items: stretch; */
 		align-items: center;
-		/* align-items: stretch; */
-		/* background-color: green; */
 	}
 </style>

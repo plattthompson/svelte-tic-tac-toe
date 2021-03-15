@@ -34,10 +34,7 @@
 	}
 </script>
 
-<!-- <div on:click|once={handleClick} > -->
 <div on:click|once={userClick}>
-	<!-- once|self -->
-	<!-- {squareId} -->
 	{#if squareValue}
 		<i class="fas fa-times fa-3x"></i>
 	{:else if squareValue === false}
@@ -48,9 +45,7 @@
 </div>
 
 <style>
-	/* justify self */
 	div {
-		/* background-color: gray; */
 		cursor: pointer;
 	}
 </style>
